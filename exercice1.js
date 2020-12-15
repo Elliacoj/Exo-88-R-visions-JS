@@ -32,7 +32,6 @@ if(array.length < 10) {
 button.addEventListener("click", function () {
     let value = input.value;
     array.push(value);
-    console.log(array.length);
 
     if(array.length === 10) {
         div1.innerHTML = "Valeur aléatoire: " + array[Math.trunc(Math.random() * array.length)];
@@ -55,8 +54,7 @@ button.addEventListener("click", function () {
     buttonAll.addEventListener("click", function () {
         div3.innerHTML = "";
         for(let x = 0; x < array.length; x++) {
-            div3.innerHTML += array.indexOf(array[x]) + " - " + array[x] + "<br>";
-            console.log(array.indexOf(array[x]));
+            div3.innerHTML += x + " - " + array[x] + "<br>";
         }
 
     });
