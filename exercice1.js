@@ -58,10 +58,8 @@ button.addEventListener("click", function () {
         }
 
     });
-
-
-    buttonSupLast.addEventListener("click", function () {
-        array.pop();
-    });
 });
 
+buttonSupLast.addEventListener("click", function () {
+    array.pop();
+});
